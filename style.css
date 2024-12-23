@@ -1,72 +1,141 @@
 /* Глобальный стиль для box-sizing */
+/* Устанавливает box-sizing для всех элементов, чтобы учитывать padding и border внутри размеров */
 * {
     box-sizing: border-box;
 }
 
 /* Стили для body */
+/* Убирает отступы по умолчанию, устанавливает шрифт, фон и базовый цвет текста */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    margin: 0; /* Убирает внешние отступы */
+    padding: 0; /* Убирает внутренние отступы */
+    font-family: Arial, sans-serif; /* Устанавливает шрифт Arial */
+    background-color: #f9f9f9; /* Светлый фон для страницы */
+    color: #333; /* Устанавливает базовый цвет текста */
+    line-height: 1.6; /* Улучшает читаемость текста */
 }
 
 /* Секция заголовков */
+/* Стили для основного заголовка страницы */
 header {
-    text-align: center;
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
-    margin-bottom: 20px;
+    text-align: center; /* Выравнивает текст по центру */
+    background-color: #4CAF50; /* Устанавливает зеленый фон */
+    color: white; /* Устанавливает белый цвет текста */
+    padding: 20px 0; /* Добавляет отступы сверху и снизу */
+    margin-bottom: 20px; /* Отделяет заголовок от остальных секций */
+    border-bottom: 5px solid #388E3C; /* Добавляет нижнюю рамку */
 }
 
 /* Общий стиль для секций */
+/* Стили для контейнеров (секций) на странице */
 section {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Центрирует секцию снаружи */
+    padding: 20px; /* Добавляет отступы внутри секции */
+    max-width: 800px; /* Ограничивает ширину секции */
+    background-color: white; /* Устанавливает белый фон */
+    border-radius: 8px; /* Скругляет углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавляет тень для глубины */
+    transition: transform 0.2s; /* Добавляет анимацию для изменения масштаба */
+}
+
+/* Анимация при наведении на секцию */
+section:hover {
+    transform: scale(1.02); /* Увеличивает размер секции при наведении */
 }
 
 /* Стили для заголовков */
+/* Общие стили для всех заголовков */
 h1, h2 {
-    text-align: center;
+    text-align: center; /* Центрирует заголовки */
 }
 
+/* Стили для заголовков второго уровня */
 h2 {
-    color: #4CAF50;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    color: #4CAF50; /* Устанавливает зеленый цвет текста */
+    border-bottom: 2px solid #ddd; /* Добавляет нижнюю рамку */
+    padding-bottom: 5px; /* Добавляет внутренний отступ снизу */
+    margin-bottom: 15px; /* Добавляет внешний отступ снизу */
 }
 
 /* Список */
+/* Общие стили для списков */
 ul {
-    list-style: square;
-    padding-left: 20px;
-    margin-top: 10px;
+    list-style: square; /* Устанавливает квадратные маркеры */
+    padding-left: 20px; /* Добавляет отступ слева */
+    margin-top: 10px; /* Добавляет отступ сверху */
 }
 
+/* Стили для элементов списка */
 ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Добавляет отступ между элементами списка */
 }
 
 /* Контактные данные */
+/* Стили для блока контактной информации */
 .personal-info {
-    text-align: left;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 10px;
+    text-align: left; /* Выравнивает текст влево */
+    font-size: 16px; /* Устанавливает размер шрифта */
+    line-height: 1.5; /* Улучшает читаемость текста */
+    margin-top: 10px; /* Добавляет отступ сверху */
 }
 
 /* Ссылки */
+/* Общие стили для всех ссылок */
 a {
-    color: #4CAF50;
-    text-decoration: none;
+    color: #4CAF50; /* Устанавливает зеленый цвет текста */
+    text-decoration: none; /* Убирает подчеркивание */
 }
 
+/* Стили для ссылок при наведении */
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Добавляет подчеркивание при наведении */
+    color: #388E3C; /* Изменяет цвет при наведении */
+}
+
+/* Стили для кнопок */
+/* Общие стили для интерактивных кнопок */
+button {
+    background-color: #4CAF50; /* Зеленый фон */
+    color: white; /* Белый цвет текста */
+    border: none; /* Убирает рамку */
+    padding: 10px 20px; /* Добавляет внутренние отступы */
+    border-radius: 5px; /* Скругляет углы */
+    cursor: pointer; /* Указывает, что элемент кликабельный */
+    font-size: 16px; /* Устанавливает размер шрифта */
+    transition: background-color 0.3s; /* Добавляет плавный переход цвета */
+}
+
+/* Стили для кнопок при наведении */
+button:hover {
+    background-color: #388E3C; /* Изменяет фон при наведении */
+}
+
+/* Навигация */
+/* Стили для блока навигации */
+nav ul {
+    list-style: none; /* Убирает маркеры списка */
+    display: flex; /* Устанавливает горизонтальное расположение элементов */
+    justify-content: center; /* Центрирует элементы */
+    padding: 0; /* Убирает внутренние отступы */
+    margin: 0; /* Убирает внешние отступы */
+    background-color: #f4f4f4; /* Светлый фон */
+    border-bottom: 2px solid #ddd; /* Добавляет нижнюю рамку */
+}
+
+/* Стили для элементов навигации */
+nav ul li {
+    margin: 0 15px; /* Добавляет отступ между элементами */
+}
+
+/* Стили для ссылок в навигации */
+nav ul li a {
+    color: #333; /* Устанавливает цвет текста */
+    font-weight: bold; /* Устанавливает жирный шрифт */
+    text-decoration: none; /* Убирает подчеркивание */
+}
+
+/* Стили для ссылок в навигации при наведении */
+nav ul li a:hover {
+    color: #4CAF50; /* Изменяет цвет текста при наведении */
+    text-decoration: underline; /* Добавляет подчеркивание при наведении */
 }
