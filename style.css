@@ -101,6 +101,7 @@ a:hover {
 ::selection {
     background-color: #dda0dd; /* Бледно-фиолетовый */
     color: #4b0082; /* Темно-фиолетовый текст */
+   
 }
 
 /* Использование псевдоэлемента ::after */
@@ -128,4 +129,20 @@ button {
 button:hover {
     background-color: #dda0dd; /* Бледно-фиолетовый фон */
     color: #4b0082; /* Темно-фиолетовый текст */
+}
+/* Стили для размещения заголовка и дат в одной строке */
+.experience-header {
+    display: flex; /* Располагает элементы в строку */
+    align-items: center; /* Выравнивает по вертикали */
+    gap: 10px; /* Промежуток между заголовком и текстом */
+}
+
+.experience-header h2 {
+    margin: 0; /* Убирает отступы */
+}
+
+.experience-header p {
+    margin: 0; /* Убирает отступы */
+    font-size: 1rem; /* Размер шрифта */
+    color: #f3e5f5; /* Цвет под твой стиль */
 }
