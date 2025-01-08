@@ -146,3 +146,14 @@ button:hover {
     font-size: 1rem; /* Размер шрифта */
     color: #f3e5f5; /* Цвет под твой стиль */
 }
+.hire-me {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 10px; /* Расстояние от верхнего края */
+    right: 10px; /* Расстояние от правого края */
+    background-color: #ffcc00; /* Цвет фона */
+    color: #4b0082; /* Цвет текста */
+    padding: 5px 10px; /* Внутренние отступы */
+    border-radius: 5px; /* Скруглённые углы */
+    font-size: 0.9rem; /* Размер текста */
+    font-weight: bold; /* Жирный текст */
+}
